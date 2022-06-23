@@ -7,13 +7,69 @@
     tools:context=".MainActivity"
     >
   <TextView
-      android:layout_width="wrap_content"
+      android:id="@+id/textView"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"
       android:text="Hello World!"
+      android:textSize="20sp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
+      />
+  <Button
+      android:id="@+id/btnGetUser"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:text="Get User"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/btnSaveUser"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+
+  <Button
+      android:id="@+id/btnSaveUser"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:text="Save User"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/btnGetUser"
+      />
+
+  <EditText
+      android:id="@+id/txtFullName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:hint="Full name"
+      android:text="Full name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+  <EditText
+      android:id="@+id/txtEmail"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:hint="Email"
+      android:text="text@gmail.com"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtFullName"
       />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
