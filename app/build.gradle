@@ -5,6 +5,10 @@ plugins {
   id 'dagger.hilt.android.plugin'
 }
 
+configurations.all {
+  resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 android {
   compileSdk 32
 

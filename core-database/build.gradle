@@ -4,6 +4,10 @@ plugins {
   id 'io.realm.kotlin'
 }
 
+configurations.all {
+  resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 android {
   compileSdk 32
 
@@ -35,5 +39,5 @@ dependencies {
   implementation 'androidx.core:core-ktx:1.8.0'
   implementation 'androidx.appcompat:appcompat:1.4.2'
 
-  api 'io.realm.kotlin:library-base:1.0.0'
+  api 'io.realm.kotlin:library-base:1.0.1-SNAPSHOT'
 }
